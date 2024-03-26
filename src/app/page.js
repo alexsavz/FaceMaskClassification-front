@@ -13,11 +13,11 @@ export default function Home() {
   const [content_type, setContent_type] = useState("");
   const [prediction, setPrediction] = useState("");
 
-  // Gérer la soumission du formulaire
+  // formulaire POST utilisant l'API AWS
   const handleSubmit = async (event) => {
     try {
       event.preventDefault();
-      // Créer un FormData pour envoyer l'image
+      // FormData pour envoyer le body de la requête multipart/form-data
       const formData = new FormData();
       formData.append("file", image);
       formData.append("filename", filename);
