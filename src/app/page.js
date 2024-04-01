@@ -12,6 +12,7 @@ export default function Home() {
   const [filename, setFilename] = useState("");
   const [content_type, setContent_type] = useState("");
   const [prediction, setPrediction] = useState("");
+  console.log(`${process.env.AWS_API}`);
 
   // formulaire POST utilisant l'API AWS
   const handleSubmit = async (event) => {
