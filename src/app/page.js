@@ -12,7 +12,6 @@ export default function Home() {
   const [filename, setFilename] = useState("");
   const [content_type, setContent_type] = useState("");
   const [prediction, setPrediction] = useState("");
-  const API = `${process.env.NEXT_PUBLIC_AWS_API}/api/predict`;
 
   // formulaire POST utilisant l'API AWS
   const handleSubmit = async (event) => {
@@ -23,9 +22,11 @@ export default function Home() {
       formData.append("file", image);
       formData.append("filename", filename);
       formData.append("content_type", content_type);
-      await axios.post(API, formData).then((response) => {
-        setPrediction(response.data);
-      });
+      await axios
+        .post(`${process.env.AWS_API}/api/predict`, formData)
+        .then((response) => {
+          setPrediction(response.data);
+        });
     } catch (error) {
       alert(error.message);
     }
