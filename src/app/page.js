@@ -23,7 +23,7 @@ export default function Home() {
       formData.append("filename", filename);
       formData.append("content_type", content_type);
       await axios
-        .post(`${process.env.NEXT_PUBLIC_AWS_API}/api/predict`, formData)
+        .post(`${process.env.NEXT_PUBLIC_AWS_API}`, formData)
         .then((response) => {
           setPrediction(response.data);
         });
