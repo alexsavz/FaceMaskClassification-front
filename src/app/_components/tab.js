@@ -71,10 +71,10 @@ export default function Example() {
             <a
               className="text-gray-500 hover:text-gray-900"
               aria-label="Visit application front-end"
-              href="https://github.com/alexsavz/face-mask-classification"
+              href="https://github.com/alexsavz/FaceMaskClassification-front"
               target="_blank"
             >
-              github.com/alexsavz/face-mask-classification
+              github.com/alexsavz/FaceMaskClassification-front
             </a>
           </p>
         ),
@@ -86,10 +86,10 @@ export default function Example() {
             <a
               className="text-gray-500 hover:text-gray-900"
               aria-label="Visit application back end"
-              href="https://github.com/alexsavz/FaceMaskClassification-front"
+              href="https://github.com/alexsavz/face-mask-classification"
               target="_blank"
             >
-              github.com/alexsavz/FaceMaskClassification-front
+              github.com/alexsavz/face-mask-classification
             </a>
           </p>
         ),

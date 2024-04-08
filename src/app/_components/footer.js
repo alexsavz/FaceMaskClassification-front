@@ -19,7 +19,7 @@ function Footer() {
         <a
           className="text-gray-500 hover:text-gray-900"
           aria-label="Visit Alex Savina LinkedIn"
-          href=""
+          href="https://www.linkedin.com/in/alex-savina-8a6482103"
           target="_blank"
         >
           <svg
@@ -33,7 +33,12 @@ function Footer() {
             ></path>
           </svg>
         </a>
-        <a href="#" className="text-gray-500 hover:text-gray-900">
+        <a
+          href="https://github.com/alexsavz?tab=repositories"
+          target="_blank"
+          aria-label="Alex Savina github repositories"
+          className="text-gray-500 hover:text-gray-900"
+        >
           <svg
             className="h-8"
             fill="currentColor"
